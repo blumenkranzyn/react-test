@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Overpass&display=swap');
+body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #5D5D5D
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Overpass', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/*header & utilitários*/
+.wrapper {
+  background: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+width: calc(80% - 80px);
+padding: 20px;
+margin: 20px auto;
+display: table
+}
+.clearfix, .clearfix:before {
+  clear: both;
+  display: table
+}
+.faq-title {
+  width: 50px;
+  float: left;
+  margin: 3px 0 0 0;
+  color: #275484;
+  font-size: 19px;
+  font-weight: bold
+}
+.decorativeLine {
+  float: left;
+  margin-left: 10px;
+  width: calc(100% - 60px);
+  height: 1px;
+  background:  #5D5D5D;
+  margin-top: 13px
+}
+
+/*questões*/
+.BoxQuestions {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
+width: calc(100% - 40px);
+padding: 20px 20px 1px 20px;
+margin: 20px 0;
+max-height: 73vh;
+overflow-y: scroll;
+}
+.BoxQuestions .question-name {
+  color: #0090D0;
+  margin: 2px;
+  font-size: 18px
+}
+.BoxQuestions p{
+  text-align: justify;
+  margin: 0 0 30px 0;
+  font-size: 16px
+}
+
+/*Contacts*/
+.contact-us .faq-title {
+  width: 290px;
+}
+.contact-us .decorativeLine {
+  width: calc(100% - 300px);
+}
+.contact-us i {
+  float: left;
+}
+.contact-us .whatsapp-number {
+  font-size: 23px;
+  float: left;
+  margin-top: 1px;
+  margin-left: 10px
+}
+
+/*help*/
+.help-form {
+
+    margin-top: 30px
+}
+.help-form .faq-title {
+  width: 70px;
+}
+.help-form .decorativeLine {
+  width: calc(100% - 80px);
+}
