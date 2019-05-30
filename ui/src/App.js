@@ -3,7 +3,6 @@ import Question from './Question';
 import Header from './Header';
 import Contacts from './Contacts';
 import Help from './Help';
-import Contact from './modules/Contact/containers'
 
 const questions = [
   {
@@ -63,9 +62,7 @@ class App extends Component {
       </div>
 <Contacts/>
 <Help/>
-<div className="container">
-      <Contact />
-    </div>
+
 
       </div>
     );
