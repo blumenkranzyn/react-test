@@ -15,13 +15,11 @@ class Contact extends Component {
 
     return (
       <div className="row">
-        <div className="col-md-8 col-md-offset-2">
-          <div className="row text-center">
-            <h2>Contact</h2>
-          </div>
+
           <Form onSubmit={this.handleSubmit} />
-          <div>Form data: {data ? JSON.stringify(data) : null}</div>
-        </div>
+          <div className="clearfix"></div>
+          <div>Dados do Formulário: {data ? JSON.stringify(data) : null}</div>
+
       </div>
     )
   }

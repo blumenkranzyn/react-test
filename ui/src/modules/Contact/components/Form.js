@@ -4,38 +4,38 @@ import {Field, reduxForm} from 'redux-form'
 const Form = props => {
   const {handleSubmit, pristine, reset, submitting} = props
   return (
-    <form onSubmit={handleSubmit} className="form-horizontal">
-      <div className="form-group col-md-6">
+    <form onSubmit={handleSubmit} className="contact-form">
+      <div className="form-group col-md-6 no-padding ">
 
         <Field
           name="name"
           component="input"
           type="text"
           placeholder="Nome"
-          className="form-control"
+          className="form-control padding-right"
         />
       </div>
-      <div className="form-group col-md-6">
+      <div className="form-group col-md-6 no-padding">
 
         <Field
           name="lastname"
           component="input"
-          type="email"
+          type="text"
           placeholder="Sobrenome"
           className="form-control"
         />
       </div>
-      <div className="form-group col-md-6">
+      <div className="form-group col-md-6 no-padding ">
 
         <Field
           name="subject"
           component="input"
           type="text"
           placeholder="Assunto"
-          className="form-control"
+          className="form-control  padding-right"
         />
       </div>
-      <div className="form-group col-md-6">
+      <div className="form-group col-md-6 no-padding">
 
         <Field
           name="email"
@@ -45,23 +45,24 @@ const Form = props => {
           className="form-control"
         />
       </div>
-      <div className="form-group col-md-12">
+      <div className="form-group col-md-12 no-padding ">
 
-        <Field name="message" component="textarea" className="form-control" placeholder="Texto" />
+        <Field name="texto" component="textarea" className="form-control" placeholder="Texto" />
       </div>
-      <div className="form-group">
+      <div className="clearfix"></div>
+      <div className="form-group pull-right">
         <button
           type="submit"
           className="btn btn-primary"
           disabled={pristine || submitting}>
-          Send
+          Enviar
         </button>{' '}
         <button
           type="button"
           className="btn btn-default"
           disabled={pristine || submitting}
           onClick={reset}>
-          Reset
+          Resetar
         </button>
       </div>
     </form>

@@ -7,6 +7,7 @@ const Help = () => (
   <div className="help-form">
 <h3 className="faq-title">Ajuda</h3><span className="decorativeLine"></span>
 </div>
+  <div className="clearfix"></div>
 </>
 );
 

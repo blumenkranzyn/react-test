@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Overpass&display=swap');
+
 body {
   margin: 0;
   font-family: 'Cabin', sans-serif;
@@ -19,10 +20,9 @@ code {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
 -moz-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
 box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
-width: calc(80% - 80px);
+width: calc(80% - 80px) !important;
 padding: 20px;
 margin: 20px auto;
-display: table
 }
 .clearfix, .clearfix:before {
   clear: both;
@@ -51,7 +51,7 @@ display: table
   -webkit-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
 -moz-box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
 box-shadow: 0px 0px 5px 0px rgba(189,189,189,1);
-width: calc(100% - 40px);
+width: 100%;
 padding: 20px 20px 1px 20px;
 margin: 20px 0;
 max-height: 73vh;
@@ -95,4 +95,23 @@ overflow-y: scroll;
 }
 .help-form .decorativeLine {
   width: calc(100% - 80px);
+}
+/*CONTATO*/
+.no-padding {
+  padding: 0 !important
+}
+.padding-right {
+  max-width: 97%
+}
+.contact-form {
+  float: left;
+  margin-top: 20px;
+  width: 100%
+}
+.contact-form input{
+  height: 45px
+}
+.contact-form textarea{
+  height: 145px;
+  resize: none
 }
